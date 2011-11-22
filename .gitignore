@@ -1,0 +1,30 @@
+ Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs) #
+##########################################################################
+bin
+obj
+
+*.csproj.user
+
+# mstest test results
+TestResults
+
+*.ReSharper.user
+*.suo
+_ReSharper.*
+
