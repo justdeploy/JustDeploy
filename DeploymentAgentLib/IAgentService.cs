@@ -7,6 +7,6 @@ namespace JustDeploy.DeploymentAgentLib
 	public interface IAgentService
 	{
 		[OperationContract]
-		void Execute(string command);
+		void Execute(string command, string data);
 	}
 }

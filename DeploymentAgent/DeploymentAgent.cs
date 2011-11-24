@@ -1,5 +1,6 @@
 ﻿using System.ServiceModel;
 using JustDeploy.Common.WindowsServices;
+using JustDeploy.DeploymentAgentLib;
 
 namespace JustDeploy.DeploymentAgent
 {
@@ -19,7 +20,7 @@ namespace JustDeploy.DeploymentAgent
 		
 		public override void Start()
 		{
-			serviceHost = new ServiceHost(typeof(MyCoolService));
+			serviceHost = new ServiceHost(typeof(AgentService));
 			serviceHost.Open();			
 		}
 
