@@ -1,4 +1,4 @@
-﻿namespace JustDeploy.Common.Commands
+﻿namespace JustDeploy.Commands
 {
 	public class Command
 	{

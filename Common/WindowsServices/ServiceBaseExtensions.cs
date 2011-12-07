@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ServiceProcess;
 
-namespace JustDeploy.Common.WindowsServices
+namespace JustDeploy.WindowsServices
 {
 	public static class ServiceBaseExtensions
 	{

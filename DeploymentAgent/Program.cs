@@ -1,4 +1,4 @@
-﻿using JustDeploy.Common.WindowsServices;
+﻿using JustDeploy.WindowsServices;
 
 namespace JustDeploy.DeploymentAgent
 {
@@ -6,6 +6,8 @@ namespace JustDeploy.DeploymentAgent
 	{
 		static void Main(string[] args)
 		{
+			Application.Init();
+
 			var wrapper = new WindowsServiceProgram<DeploymentAgent>();
 			wrapper.Run(args);
 		}

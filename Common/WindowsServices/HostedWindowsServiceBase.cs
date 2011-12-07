@@ -1,4 +1,4 @@
-﻿namespace JustDeploy.Common.WindowsServices
+﻿namespace JustDeploy.WindowsServices
 {
 	public abstract class HostedWindowsServiceBase : IHostedWindowsService
 	{

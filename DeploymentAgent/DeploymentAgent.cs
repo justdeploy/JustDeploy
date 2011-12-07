@@ -1,6 +1,6 @@
 ﻿using System.ServiceModel;
-using JustDeploy.Common.WindowsServices;
 using JustDeploy.DeploymentAgentLib;
+using JustDeploy.WindowsServices;
 
 namespace JustDeploy.DeploymentAgent
 {

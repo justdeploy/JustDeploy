@@ -3,7 +3,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Threading;
 
-namespace JustDeploy.Common.WindowsServices
+namespace JustDeploy.WindowsServices
 {
 	public class WindowsServiceProgram<T> where T : IHostedWindowsService, new()
 	{

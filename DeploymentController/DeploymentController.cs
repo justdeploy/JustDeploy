@@ -1,5 +1,6 @@
 ﻿using System;
-using JustDeploy.Common.WindowsServices;
+using DeploymentControllerLib;
+using JustDeploy.WindowsServices;
 
 namespace JustDeploy.DeploymentController
 {
@@ -12,7 +13,9 @@ namespace JustDeploy.DeploymentController
 
 		public override void Start()
 		{
-			
+			var blah = new Class1();
+
+			blah.DoStuff();
 		}
 	}
 }

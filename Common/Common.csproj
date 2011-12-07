@@ -8,7 +8,7 @@
     <ProjectGuid>{777B9F27-8C30-411F-BFA9-8ABB8486A717}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JustDeploy.Common</RootNamespace>
+    <RootNamespace>JustDeploy</RootNamespace>
     <AssemblyName>JustDeploy.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -56,7 +56,15 @@
     <Compile Include="..\AssemblyInfoGlobal.cs">
       <Link>Properties\AssemblyInfoGlobal.cs</Link>
     </Compile>
+    <Compile Include="Application.cs" />
+    <Compile Include="CommonAssemblies.cs" />
+    <Compile Include="DI\DiContainer.cs" />
+    <Compile Include="DI\DiRegistry.cs" />
+    <Compile Include="Reflection\AssemblyUtils.cs" />
     <Compile Include="Commands\Command.cs" />
+    <Compile Include="DependencyDefinition.cs" />
+    <Compile Include="IO\IStreamTools.cs" />
+    <Compile Include="IO\StreamTools.cs" />
     <Compile Include="WindowsServices\HostedWindowsServiceBase.cs" />
     <Compile Include="WindowsServices\IHostedWindowsService.cs" />
     <Compile Include="WindowsServices\ServiceBaseExtensions.cs" />

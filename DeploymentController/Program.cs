@@ -1,4 +1,4 @@
-﻿using JustDeploy.Common.WindowsServices;
+﻿using JustDeploy.WindowsServices;
 
 namespace JustDeploy.DeploymentController
 {
@@ -6,6 +6,8 @@ namespace JustDeploy.DeploymentController
 	{
 		static void Main(string[] args)
 		{
+			Application.Init();
+
 			var wrapper = new WindowsServiceProgram<DeploymentController>();
 			wrapper.Run(args);
 		}
