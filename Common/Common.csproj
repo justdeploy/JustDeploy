@@ -58,8 +58,10 @@
     </Compile>
     <Compile Include="Application.cs" />
     <Compile Include="CommonAssemblies.cs" />
+    <Compile Include="CommonRegistry.cs" />
     <Compile Include="DI\DiContainer.cs" />
     <Compile Include="DI\DiRegistry.cs" />
+    <Compile Include="DI\RegistryBase.cs" />
     <Compile Include="Reflection\AssemblyUtils.cs" />
     <Compile Include="Commands\Command.cs" />
     <Compile Include="DependencyDefinition.cs" />
