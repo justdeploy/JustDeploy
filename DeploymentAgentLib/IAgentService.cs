@@ -4,7 +4,7 @@ using System.ServiceModel;
 namespace JustDeploy.DeploymentAgentLib
 {
 
-	[ServiceContract(Namespace = "http://justdeploy.nexia.ca/schema/v1/")]
+	[ServiceContract(Namespace = Application.WcfNamespace)]
 	public interface IAgentService
 	{
 		[OperationContract]

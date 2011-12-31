@@ -44,7 +44,10 @@
       <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -62,11 +65,18 @@
     <Compile Include="DI\DiContainer.cs" />
     <Compile Include="DI\DiRegistry.cs" />
     <Compile Include="DI\RegistryBase.cs" />
-    <Compile Include="Reflection\AssemblyUtils.cs" />
     <Compile Include="Commands\Command.cs" />
-    <Compile Include="DependencyDefinition.cs" />
+    <Compile Include="IO\WcfFileTrans\FileDownloadService.cs" />
+    <Compile Include="IO\WcfFileTrans\FileMetaData.cs" />
     <Compile Include="IO\IStreamTools.cs" />
     <Compile Include="IO\StreamTools.cs" />
+    <Compile Include="IO\WcfFileTrans\FileDownloadMessage.cs" />
+    <Compile Include="IO\WcfFileTrans\FileDownloadReturnMessage.cs" />
+    <Compile Include="IO\WcfFileTrans\FileUploadMessage.cs" />
+    <Compile Include="IO\WcfFileTrans\FileUploadReturnMessage.cs" />
+    <Compile Include="IO\WcfFileTrans\FileUploadService.cs" />
+    <Compile Include="IO\WcfFileTrans\IFileDownloadService.cs" />
+    <Compile Include="IO\WcfFileTrans\IFileUploadService.cs" />
     <Compile Include="WindowsServices\HostedWindowsServiceBase.cs" />
     <Compile Include="WindowsServices\IHostedWindowsService.cs" />
     <Compile Include="WindowsServices\ServiceBaseExtensions.cs" />

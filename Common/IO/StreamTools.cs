@@ -4,7 +4,7 @@ namespace JustDeploy.IO
 {
 	public class StreamTools : IStreamTools
 	{
-		public void CopyStream(Stream input, Stream output, int bufferSize = 32*1024)
+		public void BufferedCopyStream(Stream input, Stream output, int bufferSize = 32*1024)
 		{
 			var buffer = new byte[bufferSize];
 			int bytesRead;

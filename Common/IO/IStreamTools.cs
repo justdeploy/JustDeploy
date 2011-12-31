@@ -4,6 +4,6 @@ namespace JustDeploy.IO
 {
 	public interface IStreamTools
 	{
-		void CopyStream(Stream input, Stream output, int bufferSize = 32*1024);
+		void BufferedCopyStream(Stream input, Stream output, int bufferSize = 32*1024);
 	}
 }
