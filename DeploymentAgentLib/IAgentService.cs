@@ -9,8 +9,5 @@ namespace JustDeploy.DeploymentAgentLib
 	{
 		[OperationContract]
 		void Execute(string command, string data);
-
-		[OperationContract]
-		void TransferStream(Stream fileStream);
 	}
 }

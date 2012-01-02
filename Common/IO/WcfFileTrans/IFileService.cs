@@ -3,9 +3,9 @@ using System.ServiceModel;
 namespace JustDeploy.IO.WcfFileTrans
 {
 	[ServiceContract(Namespace = Application.WcfNamespace)]
-	public interface IFileDownloadService
+	public interface IFileService
 	{
-		[OperationContract(IsOneWay = false)]
-		void DownloadFile(FileDownloadMessage request);
+		[OperationContract]
+		void PutFile(PutFileMessage msg);
 	}
 }

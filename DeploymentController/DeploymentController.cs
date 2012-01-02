@@ -1,5 +1,5 @@
 ﻿using System;
-using DeploymentControllerLib;
+using JustDeploy.DeploymentControllerLib;
 using JustDeploy.WindowsServices;
 
 namespace JustDeploy.DeploymentController
@@ -16,6 +16,8 @@ namespace JustDeploy.DeploymentController
 			var blah = new Class1();
 
 			blah.DoStuff();
+
+			blah.TransferFile();
 		}
 	}
 }

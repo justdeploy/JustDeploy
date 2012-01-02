@@ -61,22 +61,16 @@
     </Compile>
     <Compile Include="Application.cs" />
     <Compile Include="CommonAssemblies.cs" />
-    <Compile Include="CommonRegistry.cs" />
     <Compile Include="DI\DiContainer.cs" />
     <Compile Include="DI\DiRegistry.cs" />
-    <Compile Include="DI\RegistryBase.cs" />
+    <Compile Include="DI\InstanceFactory.cs" />
     <Compile Include="Commands\Command.cs" />
-    <Compile Include="IO\WcfFileTrans\FileDownloadService.cs" />
-    <Compile Include="IO\WcfFileTrans\FileMetaData.cs" />
+    <Compile Include="IO\WcfFileTrans\FileEventArgs.cs" />
     <Compile Include="IO\IStreamTools.cs" />
     <Compile Include="IO\StreamTools.cs" />
-    <Compile Include="IO\WcfFileTrans\FileDownloadMessage.cs" />
-    <Compile Include="IO\WcfFileTrans\FileDownloadReturnMessage.cs" />
-    <Compile Include="IO\WcfFileTrans\FileUploadMessage.cs" />
-    <Compile Include="IO\WcfFileTrans\FileUploadReturnMessage.cs" />
-    <Compile Include="IO\WcfFileTrans\FileUploadService.cs" />
-    <Compile Include="IO\WcfFileTrans\IFileDownloadService.cs" />
-    <Compile Include="IO\WcfFileTrans\IFileUploadService.cs" />
+    <Compile Include="IO\WcfFileTrans\PutFileMessage.cs" />
+    <Compile Include="IO\WcfFileTrans\FileService.cs" />
+    <Compile Include="IO\WcfFileTrans\IFileService.cs" />
     <Compile Include="WindowsServices\HostedWindowsServiceBase.cs" />
     <Compile Include="WindowsServices\IHostedWindowsService.cs" />
     <Compile Include="WindowsServices\ServiceBaseExtensions.cs" />

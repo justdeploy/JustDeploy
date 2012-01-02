@@ -4,12 +4,12 @@ using System.ServiceModel;
 namespace JustDeploy.IO.WcfFileTrans
 {
 	[MessageContract]
-	public class FileUploadMessage
+	public class PutFileMessage
 	{
-		[MessageBodyMember(Order = 1)]
-		public Stream FileByteStream;
-
 		[MessageHeader(MustUnderstand = true)]
-		public FileMetaData FileMetaData;
+		public string VirtualPath { get; set; }
+
+		[MessageBodyMember(Order = 1)]
+		public Stream DataStream { get; set; }
 	}
 }
