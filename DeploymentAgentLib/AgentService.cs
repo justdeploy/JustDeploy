@@ -13,9 +13,11 @@ namespace JustDeploy.DeploymentAgentLib
 
 		public IFileService FileService { get; private set; }
 
-		public void Execute(string command, string data)
+		public void Execute(string type, string data)
 		{
-			Console.WriteLine(String.Format("{0}: {1}", command, data));
+			Logger.
+
+			Console.WriteLine(String.Format("{0}: {1}", type, data));
 		}
 
 		public void PutFile(PutFileMessage msg)

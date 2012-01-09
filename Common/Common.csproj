@@ -37,8 +37,12 @@
     <Reference Include="Common.Logging.Log4Net">
       <HintPath>..\packages\Common.Logging.Log4Net.2.0.0\lib\2.0\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.1.2.11\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.0.5\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap">
       <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
@@ -60,17 +64,25 @@
       <Link>Properties\AssemblyInfoGlobal.cs</Link>
     </Compile>
     <Compile Include="Application.cs" />
+    <Compile Include="Commands\CommonCommandRegistry.cs" />
+    <Compile Include="Commands\ExecuteCommand.cs" />
+    <Compile Include="Commands\ExecuteCommandOpts.cs" />
+    <Compile Include="Commands\ICommand.cs" />
     <Compile Include="CommonAssemblies.cs" />
     <Compile Include="DI\DiContainer.cs" />
     <Compile Include="DI\DiRegistry.cs" />
     <Compile Include="DI\InstanceFactory.cs" />
     <Compile Include="Commands\Command.cs" />
+    <Compile Include="IO\Json.cs" />
+    <Compile Include="IO\IJsonSerializer.cs" />
+    <Compile Include="IO\JsonSerializer.cs" />
     <Compile Include="IO\WcfFileTrans\FileEventArgs.cs" />
     <Compile Include="IO\IStreamTools.cs" />
     <Compile Include="IO\StreamTools.cs" />
     <Compile Include="IO\WcfFileTrans\PutFileMessage.cs" />
     <Compile Include="IO\WcfFileTrans\FileService.cs" />
     <Compile Include="IO\WcfFileTrans\IFileService.cs" />
+    <Compile Include="Logging\Logger.cs" />
     <Compile Include="WindowsServices\HostedWindowsServiceBase.cs" />
     <Compile Include="WindowsServices\IHostedWindowsService.cs" />
     <Compile Include="WindowsServices\ServiceBaseExtensions.cs" />
