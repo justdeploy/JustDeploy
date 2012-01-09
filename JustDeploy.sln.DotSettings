@@ -32,6 +32,7 @@ public ILog Logger&#xD;
 	{&#xD;
 		return _logger ?? (_logger = LogManager.GetCurrentClassLogger());&#xD;
 	}&#xD;
+	set { _logger = value; }&#xD;
 }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8CF228EF731C54BB80CD580840E3E03/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8CF228EF731C54BB80CD580840E3E03/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
@@ -46,6 +47,7 @@ public static ILog Logger&#xD;
 	{&#xD;
 		return _logger ?? (_logger = LogManager.GetCurrentClassLogger());&#xD;
 	}&#xD;
+	set { _logger = value; }&#xD;
 }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8CF228EF731C54BB80CD580840E3E03/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E8CF228EF731C54BB80CD580840E3E03/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>

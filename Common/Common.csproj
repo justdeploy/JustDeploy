@@ -37,10 +37,6 @@
     <Reference Include="Common.Logging.Log4Net">
       <HintPath>..\packages\Common.Logging.Log4Net.2.0.0\lib\2.0\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\log4net.1.2.11\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.0.5\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -82,7 +78,6 @@
     <Compile Include="IO\WcfFileTrans\PutFileMessage.cs" />
     <Compile Include="IO\WcfFileTrans\FileService.cs" />
     <Compile Include="IO\WcfFileTrans\IFileService.cs" />
-    <Compile Include="Logging\Logger.cs" />
     <Compile Include="WindowsServices\HostedWindowsServiceBase.cs" />
     <Compile Include="WindowsServices\IHostedWindowsService.cs" />
     <Compile Include="WindowsServices\ServiceBaseExtensions.cs" />

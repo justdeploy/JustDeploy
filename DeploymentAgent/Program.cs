@@ -1,4 +1,5 @@
-﻿using JustDeploy.WindowsServices;
+﻿using Common.Logging;
+using JustDeploy.WindowsServices;
 
 namespace JustDeploy.DeploymentAgent
 {
@@ -7,6 +8,8 @@ namespace JustDeploy.DeploymentAgent
 		static void Main(string[] args)
 		{
 			Application.Init();
+
+			LogManager.GetCurrentClassLogger().Warn("Hello world! from Logger");
 
 			var wrapper = new WindowsServiceProgram<DeploymentAgent>();
 			wrapper.Run(args);

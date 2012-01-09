@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8942E136-59ED-4B8F-A601-03C3024DCEF9}"
 	ProjectSection(SolutionItems) = preProject
 		AssemblyInfoGlobal.cs = AssemblyInfoGlobal.cs
+		JustDeploy.sln.DotSettings = JustDeploy.sln.DotSettings
 		README.txt = README.txt
 	EndProjectSection
 EndProject
